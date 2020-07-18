@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validator</title>
+</head>
+<body>
+    <form onsubmit="handleSubmit(event)" class="form" id="form">
+        <div class="form__field">
+            <input required type="text" id="nickname" name="nickname" class="form__field__input" />
+            <label for="nickname" class="form__field__label">
+                Имя пользователя
+            </label>
+            <div class="form__field__errors-list">
+
+            </div>
+        </div>
+
+        <div class="form__field">
+            <input required type="text" id="name" name="name" class="form__field__input" />
+            <label for="name" class="form__field__label">
+                Ваше имя
+            </label>
+            <div class="form__field__errors-list">
+
+            </div>
+        </div>
+
+        <div class="form__field">
+            <input required type="text" id="surname" name="surname" class="form__field__input" />
+            <label for="surname" class="form__field__label">
+                Ваша фамилия
+            </label>
+            <div class="form__field__errors-list">
+
+            </div>
+        </div>
+
+
+        <div class="form__field">
+            <input required type="password" id="password" name="password" class="form__field__input" />
+            <label for="password" class="form__field__label">
+                Пароль
+            </label>
+            <div class="form__field__errors-list">
+
+            </div>
+        </div>
+
+        <div class="form__field">
+            <input required type="password" id="repeat_password" name="repeat_password" class="form__field__input">
+            <label for="repeat_password" class="form__field__label">
+                Повторите пароль
+            </label>
+            <div class="form__field__errors-list">
+
+            </div>
+        </div>
+        <div class="form__controls">
+            <button type="reset" class="form__controls__button" onclick="ensureReset(event)">Сбросить</button>
+            <button type="submit" class="form__controls__button primary">Зарегистрироваться</button>
+        </div>
+    </form>
+
+    <script src="errors.js"></script>
+    <script src="index.js"></script>
+    <script src="example.js"></script>
+</body>
+</html>
